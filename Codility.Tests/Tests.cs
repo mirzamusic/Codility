@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Codility.Arrays;
+﻿using Codility.Arrays;
 using Codility.CountingElements;
 using Codility.Iterations;
 using Codility.Leader;
@@ -9,6 +8,8 @@ using Codility.Sorting;
 using Codility.StacksAndQueues;
 using Codility.TimeComplexity;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Linq;
+using Codility.PrimeAndCompositeNumbers;
 
 namespace Codility.Tests
 {
@@ -206,5 +207,36 @@ namespace Codility.Tests
             Assert.AreEqual(356, MaxProfit.Solution(new[] { 23171, 21011, 21123, 21366, 21013, 21367 }));
         }
 
+        [TestMethod]
+        public void MaxDoubleSliceSumTest()
+        {
+            Assert.AreEqual(17, MaxDoubleSliceSum.Solution(new[] { 3, 2, 6, -1, 4, 5, -1, 2 }));
+        }
+
+        [TestMethod]
+        public void MaxSliceSumTest()
+        {
+            Assert.AreEqual(5, MaxSliceSum.Solution(new[] { 3, 2, -6, 4, 0 }));
+        }
+
+        [TestMethod]
+        public void MinPerimeterRectangleTest()
+        {
+            Assert.AreEqual(22, MinPerimeterRectangle.Solution(30));
+        }
+
+        [TestMethod]
+        public void CountFactorsTest()
+        {
+            Assert.AreEqual(1, CountFactors.Solution(1));
+            Assert.AreEqual(3, CountFactors.Solution(4));
+            Assert.AreEqual(8, CountFactors.Solution(24));
+        }
+
+        [TestMethod]
+        public void FlagsTest()
+        {
+            Assert.AreEqual(3, Flags.Solution(new[] { 1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2 }));
+        }
     }
 }

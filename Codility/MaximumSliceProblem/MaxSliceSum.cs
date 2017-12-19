@@ -6,26 +6,15 @@ namespace Codility.MaximumSliceProblem
     /// Correctness:    100%
     /// Performace:     100%
     /// </summary>
-    public class MaxProfit
+    public class MaxSliceSum
     {
         public static int Solution(int[] A)
         {
-            if (A.Length == 0)
-                return 0;
-
-            var difs = new int[A.Length];
-            difs[0] = int.MinValue;
+            var maxEnd = A[0];
+            var maxSlice = A[0];
             for (var i = 1; i < A.Length; i++)
             {
-                difs[i] = A[i] - A[i - 1];
-            }
-
-            var maxEnd = 0;
-            var maxSlice = 0;
-
-            foreach (var dif in difs)
-            {
-                maxEnd = Math.Max(0, maxEnd + dif);
+                maxEnd = Math.Max(A[i], maxEnd + A[i]);
                 maxSlice = Math.Max(maxSlice, maxEnd);
             }
 
