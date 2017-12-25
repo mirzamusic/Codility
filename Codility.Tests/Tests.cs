@@ -236,7 +236,15 @@ namespace Codility.Tests
         [TestMethod]
         public void FlagsTest()
         {
+            Assert.AreEqual(2, Flags.Solution(new[] { 0, 0, 0, 0, 0, 1, 0, 1, 0, 1 }));
             Assert.AreEqual(3, Flags.Solution(new[] { 1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2 }));
+        }
+
+        [TestMethod]
+        public void PeaksTest()
+        {
+            Assert.AreEqual(1, Peaks.Solution(new[] { 1, 3, 2, 1 }));
+            Assert.AreEqual(3, Peaks.Solution(new[] { 1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2 }));
         }
     }
 }

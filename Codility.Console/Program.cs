@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 
 namespace Codility.Console
 {
@@ -8,41 +6,17 @@ namespace Codility.Console
     {
         public static void Main(string[] args)
         {
-            int n = 6;
+            var a = new[] { 1, 3, 6, 4, 1, 2 };
+            var sorted = a.Where(i => i > 0).Distinct().OrderBy(i => i).ToArray();
 
-            for (int i = 0; i <= n; i++)
+            for (var i = 0; i < sorted.Length - 1; i++)
             {
-                var line = "";
-                for (int j = n; j >= 0; j--)
-                {
-                    line += j > i ? " " : "#";
-                }
-                System.Console.WriteLine(line);
+                if (sorted[i] + 1 == sorted[i + 1])
+                    continue;
+
+                System.Console.WriteLine(sorted[i] + 1);
+                break;
             }
-
-            System.Console.ReadKey(true);
-
-            //var lines = new[]
-            //{
-            //    new[] { "john", "xavier", "austin", "annie" },
-            //    new[] { "333", "11", "578", "314", "561" },
-            //    new[] { "new york", "boston", "sf", "la", "tc" },
-            //};
-
-            //var structured = new List<string[]>();
-            //var maxLength = lines.Max(l => l.Length);
-            //for (var i = 0; i < maxLength; i++)
-            //    structured.Add(new string[lines.Length]);
-
-            //for (int i = 0; i < lines.Length; i++)
-            //{
-            //    for (int l = 0; l < lines[i].Length; l++)
-            //    {
-            //        structured[l][i] = lines[i][l];
-            //    }
-            //}
-
-            //var sorted = structured.OrderBy(s => s[0]);
         }
     }
 }
