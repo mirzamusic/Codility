@@ -9,7 +9,9 @@ using Codility.StacksAndQueues;
 using Codility.TimeComplexity;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
+using Codility.EuclideanAlgorithm;
 using Codility.PrimeAndCompositeNumbers;
+using Codility.SieveOfEratosthenes;
 
 namespace Codility.Tests
 {
@@ -245,6 +247,31 @@ namespace Codility.Tests
         {
             Assert.AreEqual(1, Peaks.Solution(new[] { 1, 3, 2, 1 }));
             Assert.AreEqual(3, Peaks.Solution(new[] { 1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2 }));
+        }
+
+        [TestMethod]
+        public void CountSemiprimesTest()
+        {
+            Assert.AreEqual("10,4,0", string.Join(",", CountSemiprimes.Solution(26, new[] { 1, 4, 16 }, new[] { 26, 10, 20 })));
+        }
+
+        [TestMethod]
+        public void CountNonDivisibleTest()
+        {
+            Assert.AreEqual("2,4,3,2,0", string.Join(",", CountNonDivisible.Solution(new[] { 3, 1, 2, 3, 6 })));
+        }
+
+
+        [TestMethod]
+        public void ChocolatesByNumbersTest()
+        {
+            Assert.AreEqual(5, ChocolatesByNumbers.Solution(10, 4));
+        }
+
+        [TestMethod]
+        public void CommonPrimeDivisorsTest()
+        {
+            Assert.AreEqual(1, CommonPrimeDivisors.Solution(new[] { 15, 10, 3 }, new[] { 75, 30, 5 }));
         }
     }
 }

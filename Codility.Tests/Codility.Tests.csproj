@@ -48,6 +48,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Real.cs" />
     <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,6 +56,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Codility.Real\Codility.Real.csproj">
+      <Project>{6018E0FE-7EF6-4FDF-90C3-975E6B741B22}</Project>
+      <Name>Codility.Real</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Codility\Codility.csproj">
       <Project>{d20caa0f-7b7f-47de-81ff-81369a227a24}</Project>
       <Name>Codility</Name>

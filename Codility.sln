@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codility.Tests", "Codility.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codility.Console", "Codility.Console\Codility.Console.csproj", "{55B25A9F-E277-4D24-82B3-4E8EA735F003}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codility.Real", "Codility.Real\Codility.Real.csproj", "{6018E0FE-7EF6-4FDF-90C3-975E6B741B22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{55B25A9F-E277-4D24-82B3-4E8EA735F003}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55B25A9F-E277-4D24-82B3-4E8EA735F003}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55B25A9F-E277-4D24-82B3-4E8EA735F003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6018E0FE-7EF6-4FDF-90C3-975E6B741B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6018E0FE-7EF6-4FDF-90C3-975E6B741B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6018E0FE-7EF6-4FDF-90C3-975E6B741B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6018E0FE-7EF6-4FDF-90C3-975E6B741B22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

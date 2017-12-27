@@ -47,6 +47,8 @@
     <Compile Include="CountingElements\MaxCounters.cs" />
     <Compile Include="CountingElements\MissingInteger.cs" />
     <Compile Include="CountingElements\PermCheck.cs" />
+    <Compile Include="EuclideanAlgorithm\ChocolatesByNumbers.cs" />
+    <Compile Include="EuclideanAlgorithm\CommonPrimeDivisors.cs" />
     <Compile Include="Leader\Dominator.cs" />
     <Compile Include="Leader\EquiLeader.cs" />
     <Compile Include="MaximumSliceProblem\MaxDoubleSliceSum.cs" />
@@ -62,6 +64,8 @@
     <Compile Include="PrimeAndCompositeNumbers\Peaks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Iterations\BinnaryGap.cs" />
+    <Compile Include="SieveOfEratosthenes\CountNonDivisible.cs" />
+    <Compile Include="SieveOfEratosthenes\CountSemiprimes.cs" />
     <Compile Include="Sorting\Distinct.cs" />
     <Compile Include="Sorting\MaxProductOfThree.cs" />
     <Compile Include="Sorting\NumberOfDiscIntersections.cs" />
