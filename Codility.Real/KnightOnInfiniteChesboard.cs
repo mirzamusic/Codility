@@ -33,24 +33,16 @@ namespace Codility.Real
     /// </summary>
     public class KnightOnInfiniteChesboard
     {
-        private static int[,] moves = {
-            { 1, 2 },
-            { 1, -2 },
-            { -1, 2 },
-            { -1, -2 },
-            { 2, -1 },
-            { 2, 1 },
-            { -2, 1 },
-            { -2, -1 }
-        };
-
         public static int Solution(int A, int B)
         {
-            var x = Math.Abs(A);
-            var y = Math.Abs(B);
+            A = Math.Abs(A);
+            B = Math.Abs(B);
 
+            if (A / (decimal) B < 0.5M || A / B > 2 || (A + B) % 3 != 0)
+                return -1;
 
-            return 3;
+            var moves = (A + B) / 3;
+            return moves <= 100000000 ? moves : -2;
         }
     }
 }
